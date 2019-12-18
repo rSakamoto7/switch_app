@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','SwitchController@index')->name('switches.index');
+Route::post('/','SwitchController@search');
+Route::get('/list','SwitchController@list')->name('switches.list');
