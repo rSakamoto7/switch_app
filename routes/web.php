@@ -12,5 +12,6 @@
 */
 
 Route::get('/','SwitchController@index')->name('switches.index');
-Route::post('/','SwitchController@search');
+Route::post('/','SwitchController@result');
+// Route::get('/result','SwitchController@getResult')->name('switches.result');
 Route::get('/list','SwitchController@list')->name('switches.list');

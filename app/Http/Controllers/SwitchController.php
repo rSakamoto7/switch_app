@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Mechanical;
+use App\Result;
+use Session;
 use Illuminate\Http\Request;
 
 class SwitchController extends Controller
@@ -12,6 +14,33 @@ class SwitchController extends Controller
         return view('home');
     }
 
+    public function result(Request $request)
+    {
+        $result = new Result();
+
+        $result->weight = $request->weight;
+        $result->click = $request->click;
+        $result->noise = $request->noise;
+        $result->response = $request->response;
+
+        $result->save();
+
+        // $test = 'a';
+
+        return view('result',[
+            'result' => $result,
+        ]);
+    }
+
+    // public function getResult()
+    // {
+    //     // $result = Result::all();
+    //     return view('result');
+        
+    //     // $postdata = Session::get('_old_input');
+    //     // return view('result', compact('postdata'));
+    // }
+
     public function list()
     {
         $mechanicals = Mechanical::all();
@@ -19,18 +48,5 @@ class SwitchController extends Controller
         return view('list',[
             'mechanicals' => $mechanicals,
         ]);
-    }
-
-    public function search(Request $request)
-    {
-        $mechanical = new Mechanical();
-
-        $mechanical->weight = $request->weight;
-        $mechanical->click = $request->click;
-        $mechanical->noise = $request->noise;
-        $mechanical->response = $request->response;
-
-        $mechanical->save();
-
     }
 }

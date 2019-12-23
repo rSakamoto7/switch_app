@@ -18,7 +18,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="/">TOPページに戻る</a>
+                        <a class="nav-item nav-link" href="/">トップページ</a>
                         <a class="nav-item nav-link" href="{{ route('switches.list') }}">スイッチ一覧</a>
                     </div>
                 </div>

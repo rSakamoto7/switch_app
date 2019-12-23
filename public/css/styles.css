@@ -79,7 +79,7 @@ label:before {
 }
 
 /* List Page*/
-.list-title {
+.list-title, .result-title {
     font-size: 20px;
     font-weight: bold;
     margin-top: 40px;
@@ -87,3 +87,19 @@ label:before {
 table {
     margin-top: 20px;
 }
+
+/* result page */
+.result-card {
+    padding: 10px 4px;
+    border: 2px dotted #40e0d0;
+}
+
+.result-card-body {
+    padding: 2px;
+}
+
+.card-deck {
+    margin-top: 30px;
+}
+
+
