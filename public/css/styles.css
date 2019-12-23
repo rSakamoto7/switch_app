@@ -1,5 +1,5 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css');
+/* @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css'); */
 /* General */
 
 body {
@@ -54,6 +54,7 @@ a.navbar-item:hover {
 label {
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 label:before {
@@ -102,4 +103,10 @@ table {
     margin-top: 30px;
 }
 
+.result-topic {
+    margin-top: 18px;
+}
 
+.result-label {
+    font-weight: bold;
+}

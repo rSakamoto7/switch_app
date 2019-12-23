@@ -9,14 +9,18 @@ use Illuminate\Http\Request;
 
 class SwitchController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        // $tempo=['weight'=>'', 'click'=>'', 'noise'=>'', 'response'=>''];
+        return view('home',[
+            'request' => $request,
+        ]);
     }
 
     public function result(Request $request)
     {
         $result = new Result();
+        $mechanicals = Mechanical::all();
 
         $result->weight = $request->weight;
         $result->click = $request->click;
@@ -25,10 +29,9 @@ class SwitchController extends Controller
 
         $result->save();
 
-        // $test = 'a';
-
         return view('result',[
             'result' => $result,
+            'mechanicals' => $mechanicals,
         ]);
     }
 
