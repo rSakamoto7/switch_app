@@ -9,18 +9,15 @@ use Illuminate\Http\Request;
 
 class SwitchController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        // $tempo=['weight'=>'', 'click'=>'', 'noise'=>'', 'response'=>''];
-        return view('home',[
-            'request' => $request,
-        ]);
+        return view('home');
     }
 
     public function result(Request $request)
     {
         $result = new Result();
-        $mechanicals = Mechanical::all();
+        // $mechanicals = Mechanical::all();
 
         $result->weight = $request->weight;
         $result->click = $request->click;
@@ -29,20 +26,32 @@ class SwitchController extends Controller
 
         $result->save();
 
+        // 条件絞る
+        $query = Mechanical::query();
+        $rweight = $request->weight;
+        $rclick = $request->click;
+        $rnoise = $request->noise;
+        $rresponse = $request->response;
+        if(!empty($rweight)) {
+            $query->where('weight', $request->weight);
+        }
+        if(!empty($rclick)) {
+            $query->where('click', $request->click);
+        }
+        if(!empty($rnoise)) {
+            $query->where('noise', $request->noise);
+        }
+        if(!empty($rresponse)) {
+            $query->where('response', $request->response);
+        }
+        $mechanicals = $query->get();
+        
         return view('result',[
+            'request' => $request,
             'result' => $result,
             'mechanicals' => $mechanicals,
         ]);
     }
-
-    // public function getResult()
-    // {
-    //     // $result = Result::all();
-    //     return view('result');
-        
-    //     // $postdata = Session::get('_old_input');
-    //     // return view('result', compact('postdata'));
-    // }
 
     public function list()
     {

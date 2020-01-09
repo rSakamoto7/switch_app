@@ -110,3 +110,38 @@ table {
 .result-label {
     font-weight: bold;
 }
+
+.recommend-switch {
+    border: 2px solid #40e0d0;
+    margin: 20px 0;
+}
+
+.result-name,.list-name {
+    font-weight: bold;
+    color: #40e0d0;
+}
+
+.result-description {
+    color: #555;
+}
+
+.swipe {
+    color: #555;
+    font-size: 13px;
+}
+
+/* スマホ横画面用 */
+@media screen and (max-width: 480px) {
+    .container{padding:0 10px}
+    div[class^="col-"] {padding:0}
+    .row {margin:0;}
+    .card {padding: 0;}
+    .result-title {margin-top: 10px;}
+    .list-title {margin-top: 10px;}
+}
+/* スマホ縦画面用 */
+@media screen and (max-width: 320px) {
+    .container{padding:0 10px}
+    div[class^="col-"] {padding:0}
+    .row {margin:0;}
+}

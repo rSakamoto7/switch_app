@@ -22,6 +22,7 @@ class MechanicalTable extends Migration
             $table->integer('noise');
             $table->integer('response');
             $table->string('description');
+            $table->string('source');
             $table->timestamps();
         });
     }

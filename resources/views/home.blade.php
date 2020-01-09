@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<div class="container py-5">
+<div class="container py-3">
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
@@ -45,7 +45,7 @@
                             </select>
                         </div>
                         <div>
-                            <input class="btn btn-lg btn-outline-success col-md-12 home-btn" type="submit" value="この条件でスイッチを探す">
+                            <input class="btn btn-lg btn-outline-success col-md-12 home-btn" type="submit" value="スイッチを探す">
                         </div>
                     </form>
                 </div>
