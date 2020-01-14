@@ -96,10 +96,6 @@ label:before {
     border-radius: 50%;
 }
 
-.switch-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /* List Page*/
 .list-title, .result-title {
@@ -183,6 +179,10 @@ table {
         height: 50%;
         margin: 20px auto 0;
         z-index: 9;
+    }
+    .switch-img {
+        max-width: 100%;
+        height: auto;
     }
 }
 /* スマホ縦画面用 */
