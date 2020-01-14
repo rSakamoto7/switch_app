@@ -180,7 +180,7 @@ table {
         z-index: 9;
     }
     .switch-img {
-        width: 90%;
+        max-height: 100%;
     }
 }
 /* スマホ縦画面用 */
