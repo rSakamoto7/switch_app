@@ -8,6 +8,7 @@ body {
 
 .navbar {
     border-radius: 0;
+    z-index: 10;
 }
 
 .nav-item{
@@ -43,9 +44,9 @@ a.navbar-item:hover {
     margin-bottom: 60px;
 }
 
-.form-group:first-of-type {
-    margin-top: 40px;
-}
+/* .form-group:first-of-type {
+    margin-top: 5px;
+} */
 
 .form-group:nth-of-type(4) {
     margin-bottom: 63.5px;
@@ -77,6 +78,22 @@ label:before {
 .btn-lg:hover {
     border: 2px  solid #40e0d0;
     background-color: #40e0d0;
+}
+
+.logo {
+    width: 350px;
+    max-width: 80%;
+    margin: 20px auto 10px;
+    z-index: 9;
+}
+
+.circle {
+    position: absolute;
+    top: -70px;
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
 }
 
 /* List Page*/
@@ -130,6 +147,21 @@ table {
     font-size: 13px;
 }
 
+#rec-switch {
+    transition: 0.6s
+}
+
+#rec-switch:hover {
+    transform: scale(1.08);
+}
+
+.detail {
+    padding: 10px 4px;
+    border: 2px dotted #40e0d0;
+    border-radius: 10px;
+}
+
+
 /* スマホ横画面用 */
 @media screen and (max-width: 480px) {
     .container{padding:0 10px}
@@ -138,6 +170,14 @@ table {
     .card {padding: 0;}
     .result-title {margin-top: 10px;}
     .list-title {margin-top: 10px;}
+    #rec-switch:hover {
+        transform: none;
+    }
+    .logo {
+        width: 250px;
+        margin: 20px auto 0;
+        z-index: 9;
+    }
 }
 /* スマホ縦画面用 */
 @media screen and (max-width: 320px) {

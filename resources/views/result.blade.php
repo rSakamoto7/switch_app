@@ -40,13 +40,31 @@
                     <div class="card-deck">
                         @foreach($mechanicals as $mechanical)
                         <div class="col-md-12">
-                            <div class="card recommend-switch mb-3">
+                            <div class="card recommend-switch mb-3"  id="rec-switch">
                                 <div class="card-body">
                                     <div class="row">
                                         <img alt="thumbnail" src="/assets/img/{{$mechanical->source}}" width="10%" class="col-md-5">
                                         <div class="col-md-7">
-                                            <p class="result-name col-md-7 mt-3">{{$mechanical->brand}}{{$mechanical->name}}</p>
-                                            <p class="result-description col-md-12">{{$mechanical->description}}</p>
+                                            <p class="result-name mt-3">{{$mechanical->brand}}{{$mechanical->name}}</p>
+                                            <p class="result-description">{{$mechanical->description}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-around">
+                                        <div class="col-md-3 detail text-center">
+                                            <h5 class="result-topic result-name">キーの重さ</h5>
+                                            <p class="result-label {{ $mechanical->weight_class }}">{{$mechanical->weight_label}}</p>
+                                        </div>
+                                        <div class="col-md-3 detail text-center">
+                                            <h5 class="result-topic result-name">クリック感</h5>
+                                            <p class="result-label {{ $mechanical->click_class }}">{{$mechanical->click_label}}</p>
+                                        </div>
+                                        <div class="col-md-3 detail text-center">
+                                            <h5 class="result-topic result-name">音の大きさ</h5>
+                                            <p class="result-label {{ $mechanical->noise_class }}">{{$mechanical->noise_label}}</p>
+                                        </div>
+                                        <div class="col-md-3 detail text-center">
+                                            <h5 class="result-topic result-name">反応速度</h5>
+                                            <p class="result-label {{ $mechanical->response_class }}">{{$mechanical->response_label}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +73,8 @@
                         @endforeach
                     </div>
                     @else
-                    <p>条件に合うやつはないよ</p>
+                    <p class="result-title text-center"><i class="fas fa-exclamation-triangle mr-2" style="color: red;"></i><br class="d-md-none">条件に合うスイッチは<br class="d-md-none">見つかりませんでした</p>
+                    <p class="text-center mt-4 font-weight-bold">条件を減らすか、条件を変更して、<br class="d-md-none">もう一度やり直して下さい</p>
                     @endif
                     <a href="{{ route('switches.index') }}" class="btn btn-lg btn-outline-success col-md-12 d-block my-4" role="button">TOPページに戻る</a>
                 </div>

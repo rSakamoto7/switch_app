@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
                     <p class="list-title mb-3"><span style="color: #40e0d0;">▶︎</span>メカニカルスイッチ一覧</p>
-                    <p class="d-md-none text-right swipe mb-1">←<i class="far fa-hand-pointer"></i>→スワイプでさらに表示されます</p>
+                    <p class="d-md-none text-center swipe mb-1">←<i class="far fa-hand-pointer"></i>→スワイプでさらに表示されます</p>
                     <div class="table-responsive">
                         <table class="table table-bordered text-nowrap mt-0">
                             <thead class="thead-light">

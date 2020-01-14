@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:title" content="メカニカルスイッチアドバイザー" />
+        <meta property="og:url" content="ページのURL" />
+        <meta property="og:image" content="/assets/img/switch-adviser.png" />
+        <meta property="og:site_name" content="メカニカルスイッチアドバイザー" />
         <title>メカニカルスイッチアドバイザー</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
@@ -11,7 +15,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <a class="navbar-brand" href="/">メカニカルスイッチアドバイザー</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" area-expanded="false" area-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

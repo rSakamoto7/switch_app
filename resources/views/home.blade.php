@@ -5,6 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
+                <div class="row justify-content-center">
+                    <!-- <span class="circle"></span> -->
+                    <img src="/assets/img/switch-adviser.png" alt="logo" class="logo text-center">
+                </div>
                 <div class="card-body">
                     <form action="{{ route('switches.index') }}" method="post">
                         @csrf
