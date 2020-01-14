@@ -175,8 +175,12 @@ table {
     }
     .logo {
         width: 250px;
+        max-width: 80%;
         margin: 20px auto 0;
         z-index: 9;
+    }
+    .switch-img {
+        width: 50%
     }
 }
 /* スマホ縦画面用 */
