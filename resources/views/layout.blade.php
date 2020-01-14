@@ -17,7 +17,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="/">メカニカルスイッチアドバイザー</a>
+                <a class="navbar-brand" href="/">ああメカニカルスイッチアドバイザー</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" area-expanded="false" area-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
