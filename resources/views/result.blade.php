@@ -43,9 +43,7 @@
                             <div class="card recommend-switch mb-3"  id="rec-switch">
                                 <div class="card-body">
                                     <div class="row">
-                                        <span class="d-md-none justify-content-center">
-                                            <img alt="thumbnail" src="/assets/img/{{$mechanical->source}}" width="10%" class="switch-img col-md-5">
-                                        </span>
+                                        <img alt="thumbnail" src="/assets/img/{{$mechanical->source}}" width="10%" class="switch-img col-md-5">
                                         <div class="col-md-7">
                                             <p class="result-name mt-3">{{$mechanical->brand}}{{$mechanical->name}}</p>
                                             <p class="result-description">{{$mechanical->description}}</p>
