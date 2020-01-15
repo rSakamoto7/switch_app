@@ -184,6 +184,9 @@ table {
         max-width: 100%;
         height: 80%;
     }
+    .form-group:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 /* スマホ縦画面用 */
 @media screen and (max-width: 320px) {
