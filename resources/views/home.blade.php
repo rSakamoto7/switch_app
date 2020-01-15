@@ -48,7 +48,7 @@
                             </select>
                         </div>
                         <div>
-                            <input class="btn btn-lg btn-outline-success col-md-12 home-btn" type="submit" value="スイッチを探す">
+                            <input class="btn btn-lg btn-outline-success col-md-12 home-btn" id="find_switch" type="submit" value="スイッチを探す">
                         </div>
                     </form>
                 </div>
