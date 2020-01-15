@@ -13,6 +13,3 @@ find_switch.addEventListener('click', function(){
         return true;
     }
 });
-// document.getElementById("find_switch").onclick = function(){
-//     alert("条件を最低1つ選択してから、ボタンをクリックして下さい");
-// }
