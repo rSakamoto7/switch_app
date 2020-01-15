@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@DE_AD_vice" />
+        <meta property="og:url" content="http://switch-adviser.herokuapp.com" />
         <meta property="og:title" content="メカニカルスイッチアドバイザー" />
-        <meta property="og:url" content="ページのURL" />
         <meta property="og:image" content="/assets/img/switch-adviser.png" />
         <meta property="og:site_name" content="メカニカルスイッチアドバイザー" />
-        <meta name="twitter:card" content="summary_large_image" />
         <title>メカニカルスイッチアドバイザー</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
