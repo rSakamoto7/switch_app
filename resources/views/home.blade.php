@@ -3,7 +3,7 @@
 @section('content')
 <div class="container py-3">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-12">
             <div class="card">
                 <div class="row justify-content-center">
                     <img src="/assets/img/switch-adviser.png" alt="logo" class="logo text-center">

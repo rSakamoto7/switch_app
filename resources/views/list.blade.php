@@ -1,9 +1,9 @@
 @extends('layout')
 
 @section('content')
-<div class="container-fluid py-3">
+<div class="container py-3">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
                     <p class="list-title mb-3"><span style="color: #40e0d0;">▶︎</span>メカニカルスイッチ一覧</p>
