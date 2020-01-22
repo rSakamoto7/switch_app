@@ -33,7 +33,10 @@ a.navbar-item:hover {
 /* TOP page */
 .card {
     border-radius: 10px;
-    padding: 10px 10%;
+}
+
+.big-card {
+    padding: 10px 4%;
 }
 
 .btn-lg {
@@ -96,6 +99,21 @@ label:before {
     border-radius: 50%;
 }
 
+#checkmodal {
+    display: block;
+}
+
+.modal-content {
+    border: 2px  solid #40e0d0;
+}
+
+.modal-header {
+    background-color: #40e0d0;
+}
+
+.modal-message {
+    text-align: center;
+}
 
 /* List Page*/
 .list-title, .result-title {
@@ -127,11 +145,13 @@ table {
 
 .result-label {
     font-weight: bold;
+    margin-bottom: 18px;
 }
 
 .recommend-switch {
     border: 2px solid #40e0d0;
     margin: 20px 0;
+    padding: 5px 3%;
 }
 
 .result-name,.list-name {
@@ -157,10 +177,12 @@ table {
 }
 
 .detail {
-    padding: 10px 4px;
+    margin: 5px 5px;
     border: 2px dotted #40e0d0;
     border-radius: 10px;
 }
+
+
 
 
 /* スマホ横画面用 */

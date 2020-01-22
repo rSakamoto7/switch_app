@@ -14,6 +14,11 @@ class SwitchController extends Controller
         return view('home');
     }
 
+    // public function getResult()
+    // {
+    //     return view('result');
+    // }
+
     public function result(Request $request)
     {
         $result = new Result();
